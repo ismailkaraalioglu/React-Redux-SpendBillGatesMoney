@@ -215,3 +215,20 @@ input::-webkit-inner-spin-button {
   font-family: "Roboto", sans-serif;
   color: #24c486;
 }
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: center;
+    margin-bottom: 15px;
+  }
+}
