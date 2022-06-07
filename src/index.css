@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: #f1f2f6;
+}
+
+.header {
+  background-color: white;
+  margin-bottom: 30px;
+}
+
+.header a {
+  color: black;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header div {
+  padding: 28px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.billgates {
+  background-color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.billgates h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.rounded-img {
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.money {
+  background: linear-gradient(180deg, #2ecc71, #1abc9c);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-items: center;
+  margin-bottom: 15px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-img {
+  /* background-color: aqua; */
+  margin: 5px 0 5px 0;
+}
+
+.card-img img {
+  height: 125px;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.card-body {
+  /* background-color: aquamarine; */
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+.card-body h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  padding: 5px;
+}
+
+.card-body p {
+  color: #24c486;
+  font-size: 25px;
+  padding: 5px;
+}
+
+.card-input-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-input-group button {
+  padding: 10px 30px;
+  border-radius: 3px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.btn-buy {
+  background: linear-gradient(180deg, #2ecc71, #1abc9c);
+}
+
+.btn-sell {
+  background: linear-gradient(180deg, #f53b82, #f53b57);
+}
+
+.btn-sell:disabled {
+  background: #f1f2f6;
+  color: #333;
+  cursor: auto;
+}
+
+.card-input-group input {
+  font-family: "Roboto", sans-serif;
+  border: 1px solid #b2bec3;
+  border-radius: 3px;
+  text-align: center;
+  width: 100%;
+  margin: 0 8px 0 8px;
+  font-size: 16px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.receipt-content {
+  background-color: white;
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 35px;
+  border-radius: 10px;
+}
+
+.receipt-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  padding-bottom: 25px;
+}
+
+.receipt-item {
+  display: grid;
+  max-width: 290px;
+  margin: 0 auto;
+  grid-template-columns: 170px 45px 75px;
+  padding: 1px;
+}
+
+.receipt-item-name {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.receipt-item-amount {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.receipt-item-price {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #24c486;
+}
+
+.receipt-total {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  max-width: 300px;
+  border-top: 1px solid #333;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-money {
+  font-family: "Roboto", sans-serif;
+  color: #24c486;
+}
