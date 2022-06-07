@@ -36,13 +36,8 @@ export const productsSlice = createSlice({
           parseInt(action.payload.amount) * parseInt(action.payload.price);
         state.money += state.diffMoney;
         addedItem.amount -= action.payload.amount;
-        if (addedItem.amount - action.payload.amount === 0) {
-          state.items = state.items.filter(
-            (item) => item.title !== addedItem.title
-          );
-        } else {
-          addedItem.amount -= action.payload.amount;
-        }
+      }else {
+        state.items = [...state.items, action.payload];
       }
     },
   },
